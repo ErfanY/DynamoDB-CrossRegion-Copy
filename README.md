@@ -1,10 +1,8 @@
-# AWS Cross Region Migration Toolset
-
+# AWS DynamoDB Cross Region Migration
 This repository contains a set of scripts to ease the migration of various AWS services to different regions.
 
-
-## DynamoDB
-`dynamodb.sh` is a script designed for migrating DynamoDB tables across two regions.  
+### Introduction
+`ddbr.sh` is a script designed for migrating DynamoDB tables across two regions.  
 
 The tool uses AWS command line tool and mainly AWS Data Pipeline in order to move data across the regions.
 
@@ -18,7 +16,7 @@ The tool uses AWS command line tool and mainly AWS Data Pipeline in order to mov
 ### Usage
 
 ```text
-Usage: ./dynamodb.sh [--profile <arg>] [--source-region <arg>] [--destination-region <arg>] [--pipeline-definition <arg>] [--s3-temp <arg>] [--s3-log <arg>] [--table <arg>] [-v|--verbose] [-h|--help]
+Usage: ./ddbr.sh [--profile <arg>] [--source-region <arg>] [--destination-region <arg>] [--pipeline-definition <arg>] [--s3-temp <arg>] [--s3-log <arg>] [--table <arg>] [-v|--verbose] [-h|--help]
 	--profile: AWS profile (default: 'default')
 	--source-region: From region (no default)
 	--destination-region: To region (no default)
