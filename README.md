@@ -1,5 +1,4 @@
-# AWS DynamoDB Cross Region Migration
-This repository contains a set of scripts to ease the migration of various AWS services to different regions.
+# AWS DynamoDB Cross Region Replicator
 
 ### Introduction
 `ddbr.sh` is a script designed for migrating DynamoDB tables across two regions.  
